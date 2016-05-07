@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: LC
 # @Date:   2016-04-27 15:14:15
-# @Last modified by:   LC
-# @Last Modified time: 2016-04-27 22:15:04
+# @Last modified by:   WuLC
+# @Last Modified time: 2016-05-07 22:51:34
 # @Email: liangchaowu5@gmail.com
 # @Function: play music with pygame,and control its' playing time 
 
@@ -50,10 +50,12 @@ def limit_func_time(func,args,time):
 		p.terminate()
 		return False
 	return True
-
+	
+def limit_playing_time(miniutes):
+	limit_func_time(play_mp3,('sound/bgm.mp3',),miniutes*60)
 
 if __name__ == '__main__':
-	mp3_file_path = 'sound/test.mp3'
+	mp3_file_path = 'sound/bgm.mp3'
 	time = 300 # seconds
 	result = limit_func_time(play_mp3, (mp3_file_path, ), time)
 	if result:
