@@ -2,7 +2,7 @@
 # @Author: WuLC
 # @Date:   2016-05-07 21:29:11
 # @Last modified by:   WuLC
-# @Last Modified time: 2016-05-07 22:53:50
+# @Last Modified time: 2016-05-07 23:01:00
 # @Email: liangchaowu5@gmail.com
 
 import Tkinter
@@ -15,7 +15,7 @@ class TomatoClock:
 	def __init__(self):
 		self.top = Tkinter.Tk()
 		self.top.wm_title('Tomato Clock')   
-		self.top.geometry('{}x{}'.format(250, 100))  
+		self.top.geometry('{}x{}'.format(250, 80))  
 		self.top.resizable(width=False, height=False)
 		self.top.iconbitmap(r'photo/tomato.ico')
 
