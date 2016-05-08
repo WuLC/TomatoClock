@@ -3,7 +3,7 @@ A simple colck for Pomodoro Technique implemented by python
 
 ## How to use?
 
-Basic gui when like this
+The GUI of the small tool is like this
 
 ![][1]
 
